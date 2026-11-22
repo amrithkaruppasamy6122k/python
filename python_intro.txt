@@ -1,0 +1,2 @@
+PYTHON :
+        -> Python is a programming language that allows humans to communicate with computers using simple and readable instructions.

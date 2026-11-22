@@ -1,2 +1,118 @@
+                                                                PYTHON PROGRAMMING 
+
+
 PYTHON :
+
         -> Python is a programming language that allows humans to communicate with computers using simple and readable instructions.
+        -> Python is a high-level, general-purpose,nterpreted programming language.
+        -> It is used to develop software, websites, applications, automation systems, Artificial Intelligence, Machine Learning, and more.
+        -> Python was created by Guido van Rossum and first released in 1991.
+
+    example :
+        input : -----> print("Hello World")
+        output : -----> Hello World
+
+Uses of Python :
+
+    Python is used in many technology fields.
+
+        1. Artificial Intelligence (AI) ------------> Building intelligent systems, chatbots, AI assistants and recommendation systems.
+
+        2. Machine Learning ------------> Predicting results, identifying patterns and training ML models.
+
+        3. Web Development ------------> Creating websites and backend applications using Django, Flask and FastAPI.
+
+        4. Data Science ------------> Data analysis, visualization, statistics and reporting.\
+
+        5. Robotics and Automation ------------> Robot control, sensor data processing and automated tasks.
+
+        6. Cybersecurity ------------> Security testing, network automation and security analysis.
+
+
+Benefits of Python :
+
+        1. Easy to learn and understand.
+        2. Simple English-like syntax.
+        3. Free and open-source.
+        4. Cross-platform support (Windows, Linux, macOS).
+        5. Large community support.
+        6. Thousands of libraries and frameworks.
+        7. Supports Object-Oriented Programming.
+        8. Useful for AI and Machine Learning.
+        9. Requires fewer lines of code for many tasks.
+        10. Easy integration with other programming languages. 
+
+
+Important Python syntax rules:
+
+        - Python is case-sensitive.
+        - Use proper indentation.
+        - Use quotation marks for strings.
+        - Use # for comments.
+        - Use parentheses with print().   
+
+Variables in Python :
+       
+       => A variable is a named storage location used to store data in a program.
+
+       example :
+        name = "Amrith"
+        age = 23
+        salary = 25000  ( here is explaination ==> name stores text.
+                                                   age stores an integer.
+                                                   salary stores a number. )
+
+
+Variable Naming Rules :
+            => These rules are important when creating variables.
+
+            Rule	      Explanation	                                         Example
+            
+            1	         Must start with a letter or underscore	                 name, _age
+            2	         Cannot start with a number                            	 1name ❌
+            3	         Can contain numbers after first character	             name1
+            4	         Cannot contain spaces	                                 first name ❌
+            5	         Can use underscore                                   	 first_name
+            6	         Cannot use special symbols	                             name@ ❌
+            7	         Case-sensitive                                     	 age and Age
+            8	         Cannot use Python keywords                         	 if, class ❌
+
+Python Data Types :
+
+            Data type               	Meaning             	                Example
+
+            int	                        Whole numbers	                        10, 100
+            float	                    Decimal numbers                         10.5
+            str	                        Text	                                "Hello"
+            bool	                    True or False	                        True
+            list	                    Ordered, changeable collection	        [10, 20, 30]
+            tuple	                    Ordered, unchangeable collection	    (10, 20)
+            set	                        Unique elements	                        {10, 20, 30}
+            dict	                    Key-value pairs	                        {"name": "Arun"}
+            NoneType	                No value	                            None
+
+
+Python Comments :
+
+            -->> Comments are notes written inside code. Python ignores comments during execution.
+
+                    Single-line comment ===>> # This is a comment 
+                    Multi-line explanation ===>> """This is a multi-line description of the program."""
+
+Basic python function :
+        These functions are used to receive information and display results.
+
+                1. print() ============>> Displays output.  ----------->> print("Hello Python")
+
+                2. input() ===========>> Receives information from the user as a string. ----------->> name = input("Enter your name: ") print("Welcome", name)
+
+                3. type() ==========>> Finds the data type. ----------->> x = 100print(type(x))
+
+                4. int() ===========>> Converts a value into an integer when possible. ----------->> age = int("23")print(age)
+
+                5. float() ==========>> Converts a value into a decimal number. ---------->> price = float("99.50")print(price)
+
+                6. str() ==========>> Converts a value into a string. ------------>> age = 23text = str(age)print(text)
+
+                7. bool() =========>> Converts a value into a Boolean. ------------>> x = bool(1)print(x) 
+

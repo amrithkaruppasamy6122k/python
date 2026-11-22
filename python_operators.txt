@@ -1,0 +1,94 @@
+Python Operators :
+        -->> An operator in Python is a special symbol or keyword used to perform operations on variables and values.
+       
+        example :
+            input :                                     output :                explaination :
+                a = 10                                      15                    =>> a and b = Operands   
+                b = 5                                                             =>> + = Operator
+                print(a + b)                                                      =>> 15 = Result                            
+
+Types of Python Operators :
+
+                Python has 7 main categories of operators.
+                    1. Arithmetic -----> Mathematical operations
+                    2. Assignment -----> Assign values
+                    3. Comparison -----> Compare values
+                    4. Logical    -----> Combine conditions
+                    5. Bitwise    -----> Binary operations
+                    6. Membership -----> Check collection items
+                    7. Identity   -----> Compare object identity
+
+1. Arithmetic Operators :
+            Arithmetic operators are used to perform mathematical calculations.
+
+         Operator	          Name	            Explanation	                                    Example	            Output
+            +	            Addition	        Adds two values	                                10 + 5	              15
+            -	            Subtraction	        Subtracts one value from another	            10 - 5	              5
+            *	            Multiplication	    Multiplies two values	                        10 * 5	              50
+            /	            Division	        Divides two values	                            10 / 5	              2.0
+            //	            Floor Division	    Divides and rounds down to the nearest integer	10 // 3	              3
+            %	            Modulus	            Returns the remainder after division	        10 % 3	              1
+            **	            Exponentiation	    Calculates power of a number	                2 ** 3	              8
+
+2. Assignment Operators
+            Used to assign values to variables or update existing values.
+        Operator	            Name	                Explanation	                                    Example         	Result
+            =	            Assignment	                Assigns a value to a variable	                x = 10	            x = 10
+            +=	            Addition Assignment	        Adds a value and updates the variable	        x += 5	            x = 15
+            -=	            Subtraction Assignment	    Subtracts a value and updates the variable	    x -= 5	            x = 5
+            *=	            Multiplication Assignment	Multiplies and updates the variable	            x *= 2	            x = 20
+            /=	            Division Assignment	        Divides and updates the variable	            x /= 2	            x = 5.0
+            //=	            Floor Division Assignment	Performs floor division and updates	            x //= 3	            x = 3
+            %=	            Modulus Assignment	        Stores the remainder	                        x %= 3	            x = 1
+            **=	            Power Assignment	        Calculates power and updates	                x **= 2	            x = 100
+            &=	            AND Assignment	            Performs bitwise AND and updates	            x &= 3	            Depends on x
+            \|=	            OR Assignment	            Performs bitwise OR and updates	                x \|= 3	            Depends on x
+            ^=	            XOR Assignment	            Performs bitwise XOR and updates	            x ^= 3	            Depends on x
+            >>=	            Right Shift Assignment	    Shifts bits to the right	                    x >>= 1	            Depends on x
+            <<=	            Left Shift Assignment	    Shifts bits to the left                     	x <<= 1	            Depends on x
+
+3. Comparison Operators
+        Used to compare two values. The result will be True or False.
+        Operator	            Name	                Explanation	                                    Example	        Output
+            ==	                Equal to	            Checks whether two values are equal	            10 == 10	    True
+            !=	                Not equal to	        Checks whether values are different	            10 != 5	        True
+            >	                Greater than	        Checks whether left value is greater	        10 > 5	        True
+            <	                Less than	            Checks whether left value is smaller	        10 < 5	        False
+            >=	                Greater than or equal	Checks whether left value is greater or equal	10 >= 10	    True
+            <=	                Less than or equal	    Checks whether left value is smaller or equal	5 <= 10	        True
+
+4. Logical Operators
+        Used to combine multiple conditions.
+            Operator	                Name	              Explanation	                             Example	        Output
+            and	                Logical AND	Returns           True when both conditions are True	    10 > 5 and 5 < 8	True
+            or	                Logical OR	Returns           True when at least one condition is True	10 < 5 or 5 < 8	    True
+            not	                Logical NOT	Reverses          the Boolean result	                    not(10 > 5)     	False
+
+    Logical operators truth table
+                    A	        B	    A and B	    A or B
+                    True	    True	True	    True
+                    True	    False	False	    True
+                    False	    True	False	    True
+                    False	    False	False	    False
+
+5. Bitwise Operators
+            Used to perform operations on the binary representation (0s and 1s) of integers.
+            Operator	    Name	                 Explanation	                   Example	                Output
+            &	        Bitwise AND	                Returns 1 if both bits are 1	    5 & 3	                1
+            \|	        Bitwise OR	                Returns 1 if either bit is 1	    5 \| 3	                7
+            ^	        Bitwise XOR                 Returns 1 if bits are different	    5 ^ 3	                6
+            ~	        Bitwise NOT	                Inverts bits	                     ~5	                    -6
+            <<	        Left Shift	                Shifts bits to the left	            5 << 1	                10
+            >>	        Right Shift	                Shifts bits to the right	        5 >> 1	                2
+
+6. Membership Operators
+        Used to check whether an item exists in a sequence or collection.
+                Operator	        Name	        Explanation         	                    Example	                                 Output
+                in	            Membership	        Checks whether an item exists	            "apple" in ["apple", "mango"]	         True
+                not in	        Non-membership	    Checks whether an item does not exist   	"orange" not in ["apple", "mango"]	     True
+
+7. Identity Operators
+            Used to check whether two variables refer to the same object in memory.
+        Operator	      Name	              Explanation	                                             Example	    Output
+            is	        Identity	        Checks whether two variables refer to the same object	     a is b     	True*
+            is not	    Non-identity	    Checks whether two variables refer to different objects	     a is not b	    False*

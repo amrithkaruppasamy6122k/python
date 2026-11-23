@@ -1,0 +1,140 @@
+python data structure :
+
+Python provides four important data structures to store and manage multiple values in a single variable:
+        1. List
+        2. Tuple
+        3. Set
+        4. Dictionary
+
+        They are used to organize, access, update and manipulate data in Python programs.
+
+LIST : 
+
+    -> A list is a collection of multiple items stored in a single variable. 
+    -> It is ordered, mutable (changeable), and allows duplicate values.
+
+List Characteristics :
+
+            Feature	                            Explanation
+            Ordered	    ----------->         Maintains insertion order
+            Mutable	    ----------->         We can add, remove and update values
+            Duplicates	----------->         Allows duplicate values
+            Indexing	----------->         Supports positive and negative indexing
+            Data types	----------->         Supports different data types
+            Syntax	    ----------->         Uses square brackets []
+
+
+List Methods :
+
+            Method	                Explanation	                         Example
+            append()	            Adds one item at the end	        a.append(50)
+            extend()	            Adds multiple items	                a.extend([40,50])
+            insert()	            Adds an item at a specific index	a.insert(1,20)
+            remove()	            Removes the first matching value	a.remove(10)
+            pop()	                Removes and returns an item	        a.pop()
+            clear()	                Removes all items	                a.clear()
+            index() 	            Returns the index of an item	    a.index(20)
+            count()	                Counts occurrences of an item	    a.count(10)
+            sort()	                Sorts the list	                    a.sort()
+            reverse()	            Reverses the list	                a.reverse()
+            copy()	                Creates a shallow copy	            a.copy()
+
+
+    tuple :
+
+       ---> A tuple is a collection of multiple values stored in a single variable. 
+       ---> It is ordered, immutable (unchangeable), and allows duplicate values.
+
+       Tuple Characteristics :
+
+                    Feature	                Explanation
+
+                    Ordered	        Maintains insertion order
+                    Immutable	    Cannot modify existing elements
+                    Duplicates	    Allows duplicate values
+                    Indexing	    Supports positive and negative indexing
+                    Data types	    Supports different data types
+                    Syntax	        Uses parentheses ()
+
+    Tuple Methods
+            Tuples have only two built-in methods.
+
+                 Method	                Explanation	                        Example
+                count()	        Counts how many times a value appears	    a.count(10)
+                index()	        Finds the position of a value	            a.index(20)
+
+            Important Tuple Operations
+                    Operation               	Example             	Purpose
+                    Indexing	                a[0]	            Access an element
+                    Slicing                 	a[1:3]	            Access a range
+                    Length	                    len(a)	            Count elements
+                    Concatenation	            a + b	            Combine tuples
+                    Repetition	                a * 2	            Repeat tuple
+                    Membership	                10 in a	            Check existence
+                    Unpacking	                x, y = (10, 20) 	Assign elements to variables
+
+SET : 
+    A set is a collection of unique elements. It does not allow duplicate values and does not support indexing.
+
+
+    Set Characteristics
+                        Feature	                Explanation
+                        Ordered	            No guaranteed positional order
+                        Mutable         	Can add and remove elements
+                        Duplicates	        Not allowed
+                        Indexing	        Not supported
+                        Data types	        Supports different hashable types
+                        Syntax	            Uses curly brackets {}
+
+Set Methods 
+                Method	                 Explanation	                                    Example
+                add()	                Adds one element	                            a.add(40)
+                update()	            Adds multiple elements	                        a.update([40,50])
+                remove()	            Removes an element; error if absent     	    a.remove(20)
+                discard()	            Removes an element without error if absent	    a.discard(20)
+                pop()	                Removes and returns an arbitrary element	    a.pop()
+                clear()	                Removes all elements	                        a.clear()
+                copy()	                Creates a shallow copy	                        a.copy()
+                union()	                Combines two sets	                            a.union(b)
+                intersection()	        Finds common elements	                        a.intersection(b)
+                difference()	        Finds elements in first set but not second	    a.difference(b)
+                symmetric_difference()  Finds elements that are not common	            a.symmetric_difference(b)
+                issubset()	            Checks whether one set is a subset	            a.issubset(b)
+                issuperset()	        Checks whether one set contains another     	a.issuperset(b)
+                isdisjoint()	        Checks whether sets have no common elements	    a.isdisjoint(b)
+                intersection_update()	Updates set with common elements	            a.intersection_update(b)
+                difference_update()	    Removes elements found in another set	            a.difference_update(b)
+                symmetric_difference_update()	Updates with non-common elements	    a.symmetric_difference_update(b)
+
+
+
+DICTIONARY :
+        A dictionary is a collection that stores data in key-value pairs. 
+        It is ordered, mutable, and does not allow duplicate keys.
+
+    Dictionary Characteristics
+            Feature	                Explanation
+            Ordered	            Maintains insertion order
+            Mutable	            Can add, update and delete items
+            Keys	            Must be unique
+            Values	            Can have duplicate values
+            Indexing	        Accessed using keys
+            Data types	        Values can contain different data types
+            Syntax	            Uses curly brackets {} with key-value pairs
+
+
+
+Dictionary Methods
+                Method      	Explanation	                                 Example
+                keys()	        Returns all keys	                        a.keys()
+                values()	    Returns all values	                        a.values()
+                items()	        Returns key-value pairs                     a.items()
+                get()	        Retrieves a value safely	                a.get("name")
+                update()	    Adds or updates items	                    a.update({"age":21})
+                pop()	        Removes a specified key	                    a.pop("age")
+                popitem()	    Removes the last inserted pair	            a.popitem()
+                clear()	        Removes all items	                        a.clear()
+                copy()	        Creates a shallow copy	                    a.copy()
+                setdefault()	Gets a key or inserts a default value	    a.setdefault("city","Chennai")
+                fromkeys()	    Creates a dictionary from given keys	    dict.fromkeys(keys,0)
+

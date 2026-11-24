@@ -1,0 +1,454 @@
+PYTHON CONDITIONAL STATEMENTS 
+================================================
+Conditional statements allow a Python program to make decisions.
+They execute different blocks of code depending on whether a condition
+evaluates to True or False.
+
+Real-life example:
+    If it rains:
+        Take an umbrella.
+    Otherwise:
+        Go without an umbrella.
+
+Python uses conditions to make similar decisions in programs.
+
+2. TYPES OF CONDITIONAL STATEMENTS
+----------------------------------
+1. if statement
+2. if-else statement
+3. if-elif-else statement
+4. Nested if statement
+5. Short-hand if statement
+6. Conditional expression (short-hand if-else / ternary expression)
+
+3. THE if STATEMENT
+-------------------
+        The if statement executes its indented block only when its condition is True.
+
+Syntax:
+    if condition:
+        statements
+
+Example:
+    age = 20
+
+    if age >= 18:
+        print("You are eligible to vote")
+
+Output:
+    You are eligible to vote
+
+Explanation:
+    age >= 18 is True because age is 20.
+    Therefore, Python executes the indented print statement.
+
+4. THE if-else STATEMENT
+------------------------
+The if-else statement selects one of two blocks:
+    - if the condition is True, the if block runs.
+    - if the condition is False, the else block runs.
+
+Syntax:
+    if condition:
+        statements_if_true
+    else:
+        statements_if_false
+
+Example:
+    number = 7
+
+    if number % 2 == 0:
+        print("Even number")
+    else:
+        print("Odd number")
+
+Output:
+    Odd number
+
+Explanation:
+    % is the modulus operator. It returns the remainder.
+    An even number has a remainder of 0 when divided by 2.
+
+5. THE if-elif-else STATEMENT
+-----------------------------
+elif means "else if". Use it to check multiple conditions.
+Python checks conditions from top to bottom and runs the first matching block.
+The else block runs if none of the earlier conditions is True.
+
+Syntax:
+    if condition1:
+        statements
+    elif condition2:
+        statements
+    elif condition3:
+        statements
+    else:
+        statements
+
+Example: Student grade calculation
+    mark = 85
+
+    if mark >= 90:
+        print("Grade A")
+    elif mark >= 80:
+        print("Grade B")
+    elif mark >= 70:
+        print("Grade C")
+    elif mark >= 50:
+        print("Grade D")
+    else:
+        print("Fail")
+
+Output:
+    Grade B
+
+Important:
+    Order the conditions carefully.
+    Once a condition is True, the remaining branches in that chain are skipped.
+
+6. NESTED if STATEMENT
+----------------------
+A nested if statement is an if statement placed inside another if or else block.
+It is useful when a decision depends on another decision.
+
+Syntax:
+    if condition1:
+        if condition2:
+            statements
+        else:
+            statements
+    else:
+        statements
+
+Example: Basic login validation
+    username = "admin"
+    password = "12345"
+
+    if username == "admin":
+        if password == "12345":
+            print("Login successful")
+        else:
+            print("Incorrect password")
+    else:
+        print("Invalid username")
+
+Output:
+    Login successful
+
+Uses:
+    - Login and access checks
+    - Banking workflows
+    - User permissions
+    - Multi-step form validation
+
+Note:
+    This is a learning example. Real applications should never store passwords
+    as plain text.
+
+7. SHORT-HAND if STATEMENT
+--------------------------
+A simple if statement can be written on one line.
+
+Syntax:
+    if condition: statement
+
+Example:
+    age = 20
+    if age >= 18: print("Adult")
+
+Output:
+    Adult
+
+Use this only for short, simple statements. For longer logic, use a normal
+multi-line if block for readability.
+
+8. CONDITIONAL EXPRESSION (SHORT-HAND if-else)
+-----------------------------------------------
+A conditional expression selects one of two values in a single expression.
+It is also commonly called a ternary expression.
+
+Syntax:
+    value_if_true if condition else value_if_false
+
+Example:
+    age = 16
+    result = "Eligible" if age >= 18 else "Not eligible"
+    print(result)
+
+Output:
+    Not eligible
+
+Another example:
+    a = 10
+    b = 20
+    largest = a if a > b else b
+    print(largest)
+
+Output:
+    20
+
+9. COMPARISON OPERATORS USED IN CONDITIONS
+------------------------------------------
+Comparison operators compare values and return True or False.
+
+Operator | Name                    | Explanation
+---------|-------------------------|------------------------------------
+==       | Equal                   | Checks whether values are equal
+!=       | Not equal               | Checks whether values are different
+>        | Greater than            | Left value is greater than right
+<        | Less than               | Left value is less than right
+>=       | Greater than or equal   | Left value is greater than or equal
+<=       | Less than or equal      | Left value is less than or equal
+
+Examples:
+    print(10 == 10)  # True
+    print(10 != 5)   # True
+    print(10 > 5)    # True
+    print(5 < 10)    # True
+    print(10 >= 10)  # True
+    print(5 <= 10)   # True
+
+10. LOGICAL OPERATORS USED IN CONDITIONS
+----------------------------------------
+Logical operators combine conditions or reverse a condition.
+
+Operator | Meaning
+---------|-------------------------------------------------------
+and      | True only when both conditions are True
+or       | True when at least one condition is True
+not      | Reverses True to False, and False to True
+
+Examples:
+    age = 22
+    has_id = True
+
+    if age >= 18 and has_id:
+        print("Entry allowed")
+    else:
+        print("Entry denied")
+
+Output:
+    Entry allowed
+
+    temperature = 35
+    is_raining = False
+
+    if temperature > 30 or is_raining:
+        print("Check the weather before going out")
+
+    if not is_raining:
+        print("It is not raining")
+
+11. TRUTH TABLES
+----------------
+AND:
+A       | B       | A and B
+--------|---------|--------
+True    | True    | True
+True    | False   | False
+False   | True    | False
+False   | False   | False
+
+OR:
+A       | B       | A or B
+--------|---------|-------
+True    | True    | True
+True    | False   | True
+False   | True    | True
+False   | False   | False
+
+NOT:
+A       | not A
+--------|------
+True    | False
+False   | True
+
+12. COMBINING CONDITIONS
+------------------------
+Example: Check whether a mark is in the valid range 0 to 100.
+    mark = 75
+
+    if mark >= 0 and mark <= 100:
+        print("Valid mark")
+    else:
+        print("Invalid mark")
+
+Output:
+    Valid mark
+
+Python also supports chained comparisons:
+    if 0 <= mark <= 100:
+        print("Valid mark")
+
+13. PRACTICAL PROGRAMS
+----------------------
+
+Program 1: Positive, negative or zero
+    number = int(input("Enter a number: "))
+
+    if number > 0:
+        print("Positive number")
+    elif number < 0:
+        print("Negative number")
+    else:
+        print("Zero")
+
+Program 2: Even or odd
+    number = int(input("Enter a number: "))
+
+    if number % 2 == 0:
+        print("Even number")
+    else:
+        print("Odd number")
+
+Program 3: Voting eligibility
+    age = int(input("Enter your age: "))
+
+    if age >= 18:
+        print("Eligible to vote")
+    else:
+        print("Not eligible to vote")
+
+Program 4: Largest of two numbers
+    a = 20
+    b = 30
+
+    if a > b:
+        print("A is largest")
+    elif b > a:
+        print("B is largest")
+    else:
+        print("Both are equal")
+
+Output:
+    B is largest
+
+Program 5: Largest of three numbers
+    a = 10
+    b = 25
+    c = 15
+
+    if a >= b and a >= c:
+        print("A is largest")
+    elif b >= a and b >= c:
+        print("B is largest")
+    else:
+        print("C is largest")
+
+Output:
+    B is largest
+
+Program 6: Leap year check
+    year = 2024
+
+    if year % 400 == 0:
+        print("Leap year")
+    elif year % 100 == 0:
+        print("Not a leap year")
+    elif year % 4 == 0:
+        print("Leap year")
+    else:
+        print("Not a leap year")
+
+Output:
+    Leap year
+
+Explanation:
+    A year is a leap year if it is divisible by 400, or if it is divisible
+    by 4 but not divisible by 100.
+
+Program 7: Simple calculator
+    a = 20
+    b = 10
+    operator = "+"
+
+    if operator == "+":
+        print(a + b)
+    elif operator == "-":
+        print(a - b)
+    elif operator == "*":
+        print(a * b)
+    elif operator == "/":
+        if b != 0:
+            print(a / b)
+        else:
+            print("Cannot divide by zero")
+    else:
+        print("Invalid operator")
+
+Output:
+    30
+
+Program 8: Electricity bill example
+    units = 150
+
+    if units <= 100:
+        bill = units * 1
+    elif units <= 200:
+        bill = units * 2
+    else:
+        bill = units * 3
+
+    print("Bill:", bill)
+
+Output:
+    Bill: 300
+
+Note:
+    These rates are assumed only for this example, not actual electricity tariffs.
+
+14. IMPORTANT RULES
+-------------------
+1. Write a colon (:) after each if, elif and else header.
+2. Indent the statements inside each block. Four spaces is the standard style.
+3. An if statement is required before elif or else.
+4. You can use zero or more elif branches.
+5. An else branch is optional and can appear only once at the end.
+6. Conditions are checked from top to bottom.
+7. Only the first True branch in an if-elif-else chain is executed.
+8. Use == to compare values; use = to assign values.
+9. Keep indentation consistent.
+10. Use parentheses when they make complex conditions easier to understand.
+
+15. DIFFERENCE BETWEEN if, elif AND else
+----------------------------------------
+Feature          | if                  | elif                 | else
+-----------------|---------------------|----------------------|------------------------
+Purpose          | First condition     | Additional condition | Remaining case
+Condition needed | Yes                 | Yes                  | No
+Position         | First               | After if             | Last
+How many?        | One per chain        | Zero or more         | Zero or one
+
+16. COMMON MISTAKES
+-------------------
+Mistake 1: Using assignment instead of comparison.
+    Incorrect: if age = 18:
+    Correct:   if age == 18:
+
+Mistake 2: Forgetting the colon.
+    Incorrect: if age >= 18
+    Correct:   if age >= 18:
+
+Mistake 3: Incorrect indentation.
+    Every statement inside a block must be indented consistently.
+
+Mistake 4: Incorrect condition order.
+    In a grade system, check higher marks before lower marks.
+
+Mistake 5: Using separate if statements when an if-elif chain is intended.
+    Separate if statements are all checked independently.
+    An if-elif-else chain selects only the first matching branch.
+
+17. QUICK REVISION TABLE
+------------------------
+Statement / operator | Purpose
+--------------------|------------------------------------------
+if                  | Runs a block when a condition is True
+if-else             | Chooses between two blocks
+if-elif-else        | Chooses among multiple conditions
+Nested if           | Checks a condition inside another condition
+Short-hand if       | Writes a simple if statement on one line
+Conditional expr.   | Chooses one of two values in one expression
+and                 | Both conditions must be True
+or                  | At least one condition must be True
+not                 | Reverses a Boolean result
